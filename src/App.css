@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 80vw;
+  height: 100vh;
+  border: 1px solid gray;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.heading{
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.para{
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reposit{
+  width: 90%;
+  height: 90%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: scroll;
 }
+
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.for_repos{
+  width: 100%;
+  height: 130px;
+  background-color: rgb(248, 248, 248);
+  position: relative;
+}
+
+.pagination{
+  padding: 1rem;
+  width: 100%;
+  height: 70px;
+  background-color:rgb(241, 237, 237);
+  padding-left: 4rem;
+}
+
+.chart{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(184, 250, 209);
+}
+
+.img{
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 100px;
+  height: 110px;
+  background-color: brown;
+}
+
+.names_of {
+  position: absolute;
+  top: 5px;
+  left: 130px;
+  font-size: 1.5rem;
+}
+
+.description{
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  font-size: 0.85rem;
+}
+
+.btn_of{
+  position: absolute;
+  bottom: 5px;
+  left: 130px;
+  display: flex;
+  gap: 1rem;
+}
+
+.btns_of{
+  width: 5rem;
+  height: 1.75rem;
+}
+
+
+.updates_of{
+  position: absolute;
+  bottom: 10px;
+  left: 400px;
+  font-size: 0.80rem;
+}
+
+
+/* Pagination- styling */
+
+.paginationBttns{
+  width: 90%;
+  height: 30px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 10px;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  color: #2b2eff;
+  margin: 10px;
+  border-radius: 2px;
+  border: 1px solid #2b2eff;
+  text-decoration: none;
+}
+
+.paginationBttns a:hover{
+  color:white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color:white;
+  background-color: #2b2eff;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 800px) {
+  .img{
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 80px;
+    height: 85px;
+  }
+
+  .names_of {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    font-size: 1.2rem;
+  }
+ 
+.description{
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  font-size: 0.75rem;
+}
+
+.btn_of{
+  position: absolute;
+  bottom: 20px;
+  left: 90px;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btns_of{
+  width: auto;
+  height: auto;
+}
+
+.updates_of{
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  font-size: 0.70rem;
+}
+
+}
+
+@media screen and (max-width: 580px){
+  
+.names_of {
+    font-size: 1rem;
+  }
+ 
+.description{
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 0.65rem;
+}
+
+.btn_of{
+  position: absolute;
+  bottom: 55px;
+  left: 90px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.updates_of{
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  font-size: 0.70rem;
+}
+}
+
+
+@media screen and (max-width: 400px){
+  
+  .names_of {
+      font-size: 0.75rem;
+    }
+   
+  
+  .btn_of{
+    position: absolute;
+    bottom: 45px;
+    left: 90px;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .updates_of{
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    font-size: 0.70rem;
+  }
+  }
+  
+
